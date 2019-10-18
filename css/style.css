@@ -1,0 +1,342 @@
+@import url(https://fonts.googleapis.com/css?family=Spectral);
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  font-family: Spectral, sans-serif;
+  background-image: url("../images/back.jpg");
+  background-color: #1985A1;
+  font-size: 18px;
+  margin: 50px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+
+h1{
+  font-size: 50px;
+  line-height: 1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+h2{
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav li{
+  display: inline;
+  padding-right: 20px;
+}
+
+nav a{
+  color: #1985A1;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover{
+  text-decoration: underline;
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+.skip a:focus{
+  top: 0;
+}
+
+*:focus {
+  border: 2px solid black;
+}
+
+
+footer{
+  background-color: #46494C;
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+  grid-column: 1/-1;
+  grid-row: 8/auto;
+}
+
+
+.container{
+
+   grid-template-columns: 100px auto auto 100px;
+   grid-row-gap: 10px;
+   display: grid;
+  grid-template-rows: 30px auto auto auto auto auto auto 100px;
+  width: 100vw;
+ }
+
+
+.nav{
+
+  background-image: url("../images/back.jpg");
+  background-color: #1985A1;
+  padding: 20px 0;
+  text-align: left;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+
+header{
+  background-attachment: fixed;
+  background-image: url("../images/back.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #1985A1;
+  height: 200px;
+  grid-column: 1/-1;
+  grid-row: 2/3;
+}
+
+header p{
+  color: #1985A1;
+  font-size: 24px;
+  padding: 0 100px;
+  text-align: center;
+}
+
+.about-image{
+  grid-column: 1 / -1;
+  grid-row: 3 / 4;
+  max-height: 700px;
+  overflow: hidden;
+}
+
+.about{
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+
+}
+
+.resume-image{
+  grid-column: 1 / -1;
+  grid-row: 4/ 5;
+  max-height: 700px;
+  overflow: hidden;
+}
+
+.resume{
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+
+.projects-image{
+  grid-column: 1 / -1;
+  grid-row: 5/ 7;
+  max-height: 700px;
+  overflow: hidden;
+}
+
+.projects{
+  grid-column: 1 / -1;
+  grid-row: 6 / 7;
+
+}
+
+
+
+.books-image{
+  grid-column: 1 / 3;
+  grid-row: 3/ 4;
+  max-height: 700px;
+  overflow: hidden;
+}
+
+.books{
+  grid-column: 1 / 3;
+  grid-row: 3/ 4;
+
+}
+
+.aboutmain-image{
+  grid-column: 1 / 4;
+  grid-row: 3 / 5;
+  max-height: 700px;
+  overflow: hidden;
+}
+
+.resumemain-image{
+  grid-column: 3 / 5;
+  grid-row: 3/ 5;
+  max-height: 700px;
+  overflow: hidden;
+}
+
+.projectsmain-image{
+  grid-column: 1 / 4;
+  grid-row: 6/ 7;
+  max-height: 700px;
+  overflow: hidden;
+}
+
+.booksmain-image{
+  grid-column: 3 / 5;
+  grid-row: 6 / 7;
+  max-height: 700px;
+  overflow: hidden;
+}
+
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+  max-height: 100vh;
+
+}
+
+.gallery img{
+  margin: 10px;
+  border: 3px solid #1985A1;;
+  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
+  max-width: 30vw;
+}
+
+.photogallery{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-height: 600vh;
+
+}
+
+.photogallery img{
+  margin: 10px;
+  border: 3px solid #1985A1;;
+  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
+  max-width: 55vw;
+}
+
+.projecthead{
+  grid-column: 3 / 4;
+  grid-row: 3/ 4;
+
+}
+
+.ux-image{
+  grid-column: 2 / 4;
+  grid-row: 5/ 6;
+  max-height: 700px;
+  max-width: 1000px;
+  overflow: hidden;
+}
+
+.tedxweb-image{
+  grid-column: 1 / -1;
+  grid-row: 3/ 5;
+  max-height: 500px;
+  max-width: 1000px;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.text-block{
+  align-self: center;
+  justify-content: central;
+  background-color: rgba(255, 255, 255, .8);
+  border: 10px solid #46494C;
+  padding: 30px;
+}
+
+
+
+@media screen and (min-width: 800px){
+
+  .container{
+
+    grid-template-columns: 50px auto 500px auto 50px;
+    grid-template-rows: 70px 400px 400px 400px 400px 400px 100px;
+  }
+
+  .nav{
+    background-color: #1985A1;
+    padding: 35px 0;
+    justify-self: right;
+    align-self: center;
+    grid-column: 1/6;
+    grid-row: 1;
+  }
+
+  .about-image{
+    grid-column: 2 / 4;
+
+
+    }
+
+  .about{
+    grid-column: 3 / 5;
+
+  }
+
+  .resume-image{
+    grid-column: 3 / 5;
+
+  }
+
+  .resume{
+    grid-column: 2 / 4;
+
+  }
+
+  .projects-image{
+    grid-column: 2 / 4;
+
+  }
+
+  .projects{
+    grid-column: 3 / 5;
+    }
+
+  .books-image{
+    grid-column: 3 / 5;
+
+  }
+
+  .books{
+    grid-column: 2 / 4;
+   }
+
+}  /*End the media query*/
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: none !important;
+    transition: default;
+    z-index: 1;
+  }
+
+
+}
