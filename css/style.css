@@ -1,3 +1,4 @@
+
 @import url(https://fonts.googleapis.com/css?family=Spectral);
 
 html{
@@ -6,12 +7,13 @@ html{
 
 body{
   font-family: Spectral, sans-serif;
-  background-image: url("../images/back.jpg");
-  background-color: #1985A1;
+  /* background-image: url("../images/back.jpg"); */
+  /* background-color: #1985A1; */
+  background-color: #A9CEF4;
   font-size: 18px;
-  margin: 50px;
-  margin-bottom: 0;
+  margin: 0;
   padding: 0;
+  margin-top: 20px;
 }
 
 
@@ -20,30 +22,44 @@ h1{
   line-height: 1;
   padding: 50px 0;
   text-align: center;
+  /* color: #39393A; */
+  /* color: #0c101c; */
+  color: black;
 }
 
 h2{
   font-size: 32px;
   line-height: 1.5;
+  color: black;
+  text-align: center;
 }
 
 nav ul{
+  display: flex;
   list-style-type: none;
 }
 
 nav li{
   display: inline;
   padding-right: 20px;
+
 }
 
+
 nav a{
-  color: #1985A1;
+  /* color: #7EA0B7; */
+  /* color: #46494C; */
+  color: #0c101c;
   font-weight: bold;
   text-decoration: none;
 }
 
 nav a:hover{
   text-decoration: underline;
+}
+.current{
+  text-decoration: underline;
+
 }
 
 .skip a{
@@ -67,260 +83,613 @@ nav a:hover{
 
 
 footer{
-  background-color: #46494C;
-  color: white;
-  padding-top: 30px;
+  background-color: #1f1a20;
+  color: #DCE0D9;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
   grid-column: 1/-1;
-  grid-row: 8/auto;
+  grid-row: 12/auto;
+
+}
+footer{
+  background-color: #1f1a20;
+  color: #DCE0D9;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  grid-column: 1/-1;
+  grid-row: 12/auto;
+
 }
 
 
-.container{
-
-   grid-template-columns: 100px auto auto 100px;
-   grid-row-gap: 10px;
-   display: grid;
-  grid-template-rows: 30px auto auto auto auto auto auto 100px;
+.footercolor{
+  color: white;
+  text-align: center;
+}
+.container {
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 15px;
+  display: grid;
+  grid-template-rows: 30px auto auto auto auto auto auto auto auto auto auto 100px;
   width: 100vw;
- }
+
+}
+
 
 
 .nav{
-
-  background-image: url("../images/back.jpg");
-  background-color: #1985A1;
+  display: flex;
+  flex-direction: column;
+  background-color: #A9CEF4;
   padding: 20px 0;
-  text-align: left;
-  grid-column: 1/-1;
-  grid-row: 1/2;
+  grid-column: 1/4;
+  grid-row: 1;
 }
 
 header{
-  background-attachment: fixed;
-  background-image: url("../images/back.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #1985A1;
-  height: 200px;
-  grid-column: 1/-1;
-  grid-row: 2/3;
+
+background-attachment: fixed; /* Parallax effect */
+background-image: url("../images/lorde.jpg");
+background-repeat: no-repeat;    /* Your code here - Link to header.jpg in the images folder */
+background-position: center;  /* Parallax effect */
+background-repeat: no-repeat; /* Parallax effect */
+background-size: cover;       /* Parallax effect */
+color: white;
+height: 200px;
+grid-column: 1/-1;            /* Parallax effect */
+grid-row: 2/3;
 }
 
 header p{
-  color: #1985A1;
-  font-size: 24px;
+  color: black;
+  font-size: 20px;
   padding: 0 100px;
   text-align: center;
 }
 
+ p{
+
+  color: black;
+  text-align: left;
+}
+
+
+
+.friends-image{
+  grid-column: 1/-1;
+  grid-row: 5/6;
+  overflow: hidden;
+
+}
+
+.chip-image{
+  grid-column: 1/-1;
+  grid-row: 4/5;
+  overflow: hidden;
+
+}
+
+.me-image{
+  grid-column: 1/-1;
+  grid-row: 6/7;
+  overflow: hidden;
+}
+
+.sky-image{
+  grid-column: 1/-1;
+  grid-row: 7/8;
+  overflow: hidden;
+}
+
+
+
 .about-image{
-  grid-column: 1 / -1;
-  grid-row: 3 / 4;
-  max-height: 700px;
+
+  grid-column: 1/-1;
+  grid-row: 3/4;
+  justify-content: center;
   overflow: hidden;
 }
 
 .about{
-  grid-column: 3 / 4;
-  grid-row: 3 / 4;
-
+  grid-column: 1/4;
+  grid-row: 4/5;
 }
 
-.resume-image{
-  grid-column: 1 / -1;
-  grid-row: 4/ 5;
-  max-height: 700px;
+.abouttext{
+  font-size: 20px;
+
+}
+.abouthead{
+  font-size: 35px;
+}
+
+.secondresume-image{
+  grid-column: 1/-1;
+  grid-row: 3/11;
   overflow: hidden;
 }
 
 .resume{
-  grid-column: 2 / 3;
-  grid-row: 4 / 5;
+grid-column: 2 /4;
+grid-row: 3/4;
 }
 
-.projects-image{
-  grid-column: 1 / -1;
-  grid-row: 5/ 7;
-  max-height: 700px;
-  overflow: hidden;
+.resumehead{
+  color: #1f1a20;;
 }
 
-.projects{
-  grid-column: 1 / -1;
-  grid-row: 6 / 7;
-
+.textbox{
+  background-color: white;
+  opacity: .5;
+  text-align: left;
+  border: 10px solid white;
+}
+.profexp{
+grid-column: 2/4;
+grid-row: 4/5;
 }
 
-
-
-.books-image{
-  grid-column: 1 / 3;
-  grid-row: 3/ 4;
-  max-height: 700px;
-  overflow: hidden;
+.profcontent{
+grid-column: 1/-1;
+grid-row: 5/7;
 }
 
-.books{
-  grid-column: 1 / 3;
-  grid-row: 3/ 4;
-
-}
-
-.aboutmain-image{
-  grid-column: 1 / 4;
-  grid-row: 3 / 5;
-  max-height: 700px;
-  overflow: hidden;
-}
-
-.resumemain-image{
-  grid-column: 3 / 5;
-  grid-row: 3/ 5;
-  max-height: 700px;
-  overflow: hidden;
-}
-
-.projectsmain-image{
-  grid-column: 1 / 4;
-  grid-row: 6/ 7;
-  max-height: 700px;
-  overflow: hidden;
-}
-
-.booksmain-image{
-  grid-column: 3 / 5;
-  grid-row: 6 / 7;
-  max-height: 700px;
-  overflow: hidden;
-}
-
-.gallery{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  justify-content: center;
-  flex-direction: column;
-  max-height: 100vh;
+.campusinvolv{
+grid-column: 1/-1;
+grid-row: 7/8;
 
 }
 
-.gallery img{
-  margin: 10px;
-  border: 3px solid #1985A1;;
-  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
-  max-width: 30vw;
+.campuscont{
+grid-column: 1/-1;
+grid-row: 8/9;
 }
 
-.photogallery{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  max-height: 600vh;
+.skills{
+grid-column: 2/4;
+grid-row: 9/10;
 
 }
-
-.photogallery img{
-  margin: 10px;
-  border: 3px solid #1985A1;;
-  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
-  max-width: 55vw;
+.skillscont{
+grid-column: 1/-1;
+grid-row: 10/11;
 }
 
 .projecthead{
-  grid-column: 3 / 4;
+  grid-column: 1/ -1;
   grid-row: 3/ 4;
 
 }
 
+.salons-image{
+  grid-column: 1/ -1;
+  grid-row: 6/ 7;
+
+}
+
+
+.tedxhead{
+  grid-column: 1/ -1;
+  grid-row: 4/5;
+}
+
+.textbox2{
+  background-color: white;
+  opacity: .5;
+  text-align: left;
+  border: 50px solid #a9cef4;
+}
+
+
+.tedx{
+  grid-column: 1/ -1;
+  grid-row: 5/6;
+}
+
+.uxhead{
+  grid-column: 1/ -1;
+  grid-row: 7/ 8;
+}
+
 .ux-image{
-  grid-column: 2 / 4;
-  grid-row: 5/ 6;
+  grid-column: 1 /-1;
+  grid-row: 9/10 ;
   max-height: 700px;
   max-width: 1000px;
   overflow: hidden;
 }
 
-.tedxweb-image{
-  grid-column: 1 / -1;
-  grid-row: 3/ 5;
-  max-height: 500px;
-  max-width: 1000px;
+.research{
+  grid-column: 1 /-1;
+  grid-row: 8/ 9;
+}
+
+.si350head{
+grid-column: 1 /-1;
+grid-row: 10/ 11;
+}
+
+.si350{
+  grid-column: 1 /-1;
+  grid-row: 11/11;
+}
+
+.books-image{
+  grid-column: 1 /-1 ;
+  grid-row: 3/ 4;
+  height: 500px;
   overflow: hidden;
+  webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  }
+
+.books{
+  grid-column: 2 /4;
+  grid-row: 5/ 8;
+  }
+
+.aridesert-image{
+    grid-column: 1/-1;
+    grid-row: 4/5;
+    overflow: hidden;
+
+  }
+
+  .suma-image{
+    grid-column: 1/-1;
+    grid-row: 6/7;
+    overflow: hidden;
+  webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  }
+
+  .lilacs2-image{
+    grid-column: 1/-1;
+    grid-row: 7/8;
+    overflow: hidden;
+  }
+
+
+
+  .ariday-image{
+
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    justify-content: center;
+    overflow: hidden;
+
+  }
+
+  .cousins-image{
+      grid-column: 1/-1;
+      grid-row: 8/9;
+      overflow: hidden;
+    }
+
+    .tedx-image{
+      grid-column: 1/-1;
+      grid-row: 9/10;
+      overflow: hidden;
+    }
+
+    .mopop-image{
+      grid-column: 1/-1;
+      grid-row: 10/11;
+      overflow: hidden;
+    }
+
+
+
+.wedding2-image{
+
+grid-column: 1/-1;
+grid-row: 12/13;
+justify-content: center;
+overflow: hidden;
+
+}
+.fall-image{
+  grid-column: 1/-1;
+  grid-row: 13/14;
   justify-content: center;
+  overflow: hidden;
+
+}
+.allison-image{
+  grid-column: 1/-1;
+  grid-row: 15/16;
+  justify-content: center;
+  overflow: hidden;
+}
+.emmag-image{
+  grid-column: 1/-1;
+  grid-row: 16/17;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.text-block{
-  align-self: center;
-  justify-content: central;
-  background-color: rgba(255, 255, 255, .8);
-  border: 10px solid #46494C;
-  padding: 30px;
+
+input[type=text]{
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
+input[type=submit] {
+  background-color: #a9cef4;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: black;
+}
+
+.form {
+  border-radius: 5px;
+  background-color: #a2a0b5;
+  padding: 20px;
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
 
 
 @media screen and (min-width: 800px){
 
   .container{
 
-    grid-template-columns: 50px auto 500px auto 50px;
-    grid-template-rows: 70px 400px 400px 400px 400px 400px 100px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 30px auto auto auto auto auto auto auto auto auto 100px;
   }
-
   .nav{
-    background-color: #1985A1;
+    /* background-color: #1985A1; */
+    background-color: #A9CEF4;
     padding: 35px 0;
     justify-self: right;
-    align-self: center;
+    align-self: center; */
     grid-column: 1/6;
     grid-row: 1;
   }
+  .friends-image{
+    grid-column: 3/4;
+    grid-row: 5/6;
+    overflow: hidden;
+  }
 
+  .chip-image{
+    grid-column: 3/4;
+    grid-row: 4/5;
+    overflow: hidden;
+  }
+
+  .me-image{
+    grid-column: 2/3;
+    grid-row: 4/5;
+   overflow: hidden;
+  }
+
+  .sky-image{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    overflow: hidden;
+  }
   .about-image{
-    grid-column: 2 / 4;
+    grid-column: 1/3;
+    grid-row: 3/4;
+    justify-content: center;
+    overflow: hidden;
+}
 
-
-    }
 
   .about{
-    grid-column: 3 / 5;
-
+    grid-column: 3/5;
+    grid-row: 3/4;
   }
 
-  .resume-image{
-    grid-column: 3 / 5;
 
-  }
 
   .resume{
-    grid-column: 2 / 4;
+  grid-column: 2 /4;
+  grid-row: 3/4;
+  }
+
+  .profexp{
+  grid-column: 1 /2;
+  grid-row: 4/5;
+  }
+
+  .profcontent{
+  grid-column: 2/4;
+  grid-row: 4/6;
+  }
+
+  .campusinvolv{
+  grid-column: 1/2;
+  grid-row: 6/7;
 
   }
 
-  .projects-image{
-    grid-column: 2 / 4;
+  .campuscont{
+  grid-column: 2/4;
+  grid-row: 6/7;
+  }
+
+  .skills{
+  grid-column: 1/2;
+  grid-row: 7/8;
+
+  }
+  .skillscont{
+  grid-column: 2/4;
+  grid-row: 7/8;
+  }
+
+  .projecthead{
+    grid-column: 1/ -1;
+    grid-row: 3/ 4;
 
   }
 
-  .projects{
-    grid-column: 3 / 5;
-    }
+  .textbox2{
+    background-color: white;
+    opacity: .5;
+    text-align: left;
+    border: 50px solid #a9cef4;
+    font-size: 20px;
+    font-stretch: expanded;
+  }
+
+
+  .salons-image{
+    grid-column: 3/ 4;
+    grid-row: 5/ 6;
+  }
+
+  .tedxhead{
+    grid-column: 2/ 3;
+    grid-row: 4/5;
+  }
+
+  .tedx{
+    grid-column: 1/ 3;
+    grid-row: 5/7;
+  }
+
+  .uxhead{
+    grid-column: 2/ 4;
+    grid-row: 6/ 7;
+  }
+
+  .ux-image{
+    grid-column: 3 / 4;
+    grid-row: 7/8 ;
+    max-height: 700px;
+    max-width: 1000px;
+    overflow: hidden;
+  }
+
+  .research{
+    grid-column: 1 /3;
+    grid-row: 7/ 8;
+  }
+
+  .si350head{
+  grid-column: 2 /3;
+  grid-row: 8/ 9;
+  }
+
+  .si350{
+    grid-column: 1 /3;
+    grid-row: 9/10;
+  }
 
   .books-image{
-    grid-column: 3 / 5;
+    grid-column: 1 / -1;
+    grid-row: 3/ 4;
+    max-height: 700px;
+    /* overflow: hidden;
+    background-attachment: fixed; /* Parallax effect */
+    background-image: url("../images/books.jpg");
+    background-repeat: no-repeat;    /* Your code here - Link to header.jpg in the images folder */
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;
+    }
 
-  }
+    .books{
+      grid-column: 2/4;
+      grid-row: 5/ 8;
+    }
 
-  .books{
-    grid-column: 2 / 4;
-   }
+    .aridesert-image{
+        grid-column: 2/3;
+        grid-row: 6/7;
+        overflow: hidden;
+      }
 
-}  /*End the media query*/
+      .suma-image{
+        grid-column: 2/-3;
+        grid-row: 4/5;
+        overflow: hidden;
+      }
+
+      .lilacs2-image{
+        grid-column: 3/4;
+        grid-row: 4/5;
+        overflow: hidden;
+      }
+
+
+
+      .ariday-image{
+
+        grid-column: 1/2;
+        grid-row: 5/5;
+        justify-content: center;
+        overflow: hidden;
+
+      }
+
+      .cousins-image{
+          grid-column: 2/3;
+          grid-row: 5/6;
+          overflow: hidden;
+        }
+
+        .tedx-image{
+          grid-column: 1/2;
+          grid-row: 6/7;
+          overflow: hidden;
+        }
+
+        .mopop-image{
+          grid-column: 4/5;
+          grid-row: 4/5;
+          overflow: hidden;
+        }
+
+
+
+    .wedding2-image{
+
+    grid-column: 4/5;
+    grid-row: 5/6;
+    justify-content: center;
+    overflow: hidden;
+
+    }
+    .fall-image{
+      grid-column: 3/4;
+      grid-row: 5/6;
+      justify-content: center;
+      overflow: hidden;
+
+    }
+.allison-image{
+  grid-column: 3/4;
+  grid-row: 6/7;
+  justify-content: center;
+  overflow: hidden;
+}
+.emmag-image{
+  grid-column: 4/5;
+  grid-row: 6/7;
+  justify-content: center;
+  overflow: hidden;
+}
+
+}
 
 @media screen and (prefers-reduced-motion: reduce){
   html{
