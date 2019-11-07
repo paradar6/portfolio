@@ -11,8 +11,6 @@ body{
   /* background-color: #1985A1; */
   background-color: #A9CEF4;
   font-size: 18px;
-  margin: 0;
-  padding: 0;
   margin-top: 20px;
 }
 
@@ -47,8 +45,6 @@ nav li{
 
 
 nav a{
-  /* color: #7EA0B7; */
-  /* color: #46494C; */
   color: #0c101c;
   font-weight: bold;
   text-decoration: none;
@@ -81,7 +77,6 @@ nav a:hover{
   border: 2px solid black;
 }
 
-
 footer{
   background-color: #1f1a20;
   color: #DCE0D9;
@@ -89,17 +84,7 @@ footer{
   padding-bottom: 10px;
   text-align: center;
   grid-column: 1/-1;
-  grid-row: 12/auto;
-
-}
-footer{
-  background-color: #1f1a20;
-  color: #DCE0D9;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-  grid-column: 1/-1;
-  grid-row: 12/auto;
+  grid-row: 16/auto;
 
 }
 
@@ -112,8 +97,8 @@ footer{
   grid-template-columns: repeat(4, 1fr);
   grid-row-gap: 15px;
   display: grid;
-  grid-template-rows: 30px auto auto auto auto auto auto auto auto auto auto 100px;
-  width: 100vw;
+  grid-template-rows: 30px auto auto auto auto auto auto auto auto auto auto auto auto auto auto 100px;
+  width: 100%;
 
 }
 
@@ -126,7 +111,9 @@ footer{
   padding: 20px 0;
   grid-column: 1/4;
   grid-row: 1;
+  padding-left: 20px;
 }
+
 
 header{
 
@@ -186,7 +173,6 @@ header p{
 
 
 .about-image{
-
   grid-column: 1/-1;
   grid-row: 3/4;
   justify-content: center;
@@ -194,13 +180,13 @@ header p{
 }
 
 .about{
-  grid-column: 1/4;
+  grid-column: 2/4;
   grid-row: 4/5;
 }
 
 .abouttext{
   font-size: 20px;
-
+  text-align: center;
 }
 .abouthead{
   font-size: 35px;
@@ -324,7 +310,42 @@ grid-row: 10/ 11;
   overflow: hidden;
   webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+}
+
+.kenburns-top {
+	-webkit-animation: kenburns-top 5s ease-out both;
+	        animation: kenburns-top 5s ease-out both;
+}
+
+@-webkit-keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
   }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+            transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+}
+
+@keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+            transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+}
 
 .books{
   grid-column: 2 /4;
@@ -335,7 +356,8 @@ grid-row: 10/ 11;
     grid-column: 1/-1;
     grid-row: 4/5;
     overflow: hidden;
-
+    -webkit-filter: saturate(200%); /* Safari */
+    filter: saturate(200%); //gotthisfromw3schools
   }
 
   .suma-image{
@@ -343,24 +365,26 @@ grid-row: 10/ 11;
     grid-row: 6/7;
     overflow: hidden;
   webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
+  filter: grayscale(100%); //gotthisfromw3schools
   }
 
   .lilacs2-image{
     grid-column: 1/-1;
     grid-row: 7/8;
     overflow: hidden;
+    -webkit-filter: saturate(200%); /* Safari */
+    filter: saturate(200%); //gotthisfromw3schools
   }
 
 
 
   .ariday-image{
-
     grid-column: 1/-1;
     grid-row: 3/4;
     justify-content: center;
     overflow: hidden;
-
+    -webkit-filter: drop-shadow(8px 8px 10px gray); /* Safari */
+    filter: drop-shadow(8px 8px 10px gray); //gotthisfromw3schools
   }
 
   .cousins-image{
@@ -384,29 +408,33 @@ grid-row: 10/ 11;
 
 
 .wedding2-image{
-
 grid-column: 1/-1;
-grid-row: 12/13;
+grid-row: 11/12;
 justify-content: center;
 overflow: hidden;
 
 }
 .fall-image{
   grid-column: 1/-1;
-  grid-row: 13/14;
+  grid-row: 12/13;
   justify-content: center;
   overflow: hidden;
+  -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
+   filter: blur(2px); //gotthisfromw3schools
 
 }
 .allison-image{
   grid-column: 1/-1;
-  grid-row: 15/16;
+  grid-row: 13/14;
   justify-content: center;
   overflow: hidden;
+  webkit-filter: sepia(75%); /* Safari 6.0 - 9.0 */
+  filter: sepia(75%);      //gotthisfromw3schools
 }
+
 .emmag-image{
   grid-column: 1/-1;
-  grid-row: 16/17;
+  grid-row: 14/15;
   justify-content: center;
   overflow: hidden;
 }
@@ -452,15 +480,17 @@ input[type=submit]:hover {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 30px auto auto auto auto auto auto auto auto auto 100px;
   }
+
   .nav{
-    /* background-color: #1985A1; */
+    display: flex;
+    flex-direction: column;
     background-color: #A9CEF4;
-    padding: 35px 0;
-    justify-self: right;
-    align-self: center; */
-    grid-column: 1/6;
+    padding: 20px 0;
+    grid-column: 1/4;
     grid-row: 1;
+    padding-left: 20px;
   }
+
   .friends-image{
     grid-column: 3/4;
     grid-row: 5/6;
@@ -674,7 +704,8 @@ input[type=submit]:hover {
       grid-row: 5/6;
       justify-content: center;
       overflow: hidden;
-
+      -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
+       filter: blur(2px); //gotthisfromw3schools
     }
 .allison-image{
   grid-column: 3/4;
