@@ -6,8 +6,6 @@ html{
 
 body{
   font-family: Spectral, sans-serif;
-  /* background-image: url("../images/back.jpg"); */
-  /* background-color: #1985A1; */
   background-color: #A9CEF4;
   font-size: 18px;
   margin-top: 20px;
@@ -19,8 +17,6 @@ h1{
   line-height: 1;
   padding: 50px 0;
   text-align: center;
-  /* color: #39393A; */
-  /* color: #0c101c; */
   color: black;
 }
 
@@ -32,14 +28,13 @@ h2{
 }
 
 nav ul{
-  display: flex;
   list-style-type: none;
+  padding-left: 20px;
 }
 
 nav li{
   display: inline;
-  padding-right: 20px;
-
+  padding-right: 15px;
 }
 
 
@@ -52,9 +47,9 @@ nav a{
 nav a:hover{
   text-decoration: underline;
 }
+
 .current{
   text-decoration: underline;
-
 }
 
 .skip a{
@@ -100,31 +95,24 @@ footer{
   width: 100%;
 
 }
-
-
-
 .nav{
-  display: flex;
-  flex-direction: column;
-  background-color: #A9CEF4;
   padding: 20px 0;
-  grid-column: 1/4;
-  grid-row: 1;
-  padding-left: 20px;
+  text-align: center;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  background-color: white;
 }
 
-
 header{
-
 background-attachment: fixed; /* Parallax effect */
-background-image: url("../images/lorde.JPG");
-background-repeat: no-repeat;    /* Your code here - Link to header.jpg in the images folder */
+background-image: url("../images/aridesert.JPG");
+background-repeat: no-repeat;
 background-position: center;  /* Parallax effect */
 background-repeat: no-repeat; /* Parallax effect */
 background-size: cover;       /* Parallax effect */
 color: white;
 height: 200px;
-grid-column: 1/-1;            /* Parallax effect */
+grid-column: 1/-1;
 grid-row: 2/3;
 }
 
@@ -133,35 +121,37 @@ header p{
   font-size: 20px;
   padding: 0 100px;
   text-align: center;
+
 }
 
- p{
+.retro{
+  color: black;  /* adding retro challenge to header */
+  letter-spacing: 0.05em;
+  text-shadow: 2px 2px 0px #d5d5d5, 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
 
+p{
   color: black;
   text-align: left;
 }
-.retroshadow{
+.retroshadow{  /* adding retro challenge to headers of the pages */
 color: #2c2c2c;
 background-color: #a9cef4;
 letter-spacing: 0.05em;
 text-shadow: 2px 2px 0px #d5d5d5, 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
-
-
-
+/* index.html page*/
 .friends-image{
   grid-column: 1/-1;
   grid-row: 5/6;
   overflow: hidden;
-
 }
 
 .chip-image{
   grid-column: 1/-1;
   grid-row: 4/5;
   overflow: hidden;
-
 }
 
 .me-image{
@@ -176,8 +166,7 @@ text-shadow: 2px 2px 0px #d5d5d5, 4px 4px 0px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
 
-
-
+/* about page  */
 .about-image{
   grid-column: 1/-1;
   grid-row: 3/4;
@@ -186,7 +175,7 @@ text-shadow: 2px 2px 0px #d5d5d5, 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 .about{
-  grid-column: 2/4;
+  grid-column: 1/-1;
   grid-row: 4/5;
 }
 
@@ -198,6 +187,7 @@ text-shadow: 2px 2px 0px #d5d5d5, 4px 4px 0px rgba(0, 0, 0, 0.2);
   font-size: 35px;
 }
 
+/* resume page */
 .secondresume-image{
   grid-column: 1/-1;
   grid-row: 3/11;
@@ -205,7 +195,7 @@ text-shadow: 2px 2px 0px #d5d5d5, 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 .resume{
-grid-column: 2 /4;
+grid-column: 1 /-1;
 grid-row: 3/4;
 }
 
@@ -215,12 +205,12 @@ grid-row: 3/4;
 
 .textbox{
   background-color: white;
-  opacity: .5;
+  opacity: .6;
   text-align: left;
   border: 10px solid white;
 }
 .profexp{
-grid-column: 2/4;
+grid-column: 1/-1;
 grid-row: 4/5;
 }
 
@@ -241,7 +231,7 @@ grid-row: 8/9;
 }
 
 .skills{
-grid-column: 2/4;
+grid-column: 1/-1;
 grid-row: 9/10;
 
 }
@@ -250,10 +240,11 @@ grid-column: 1/-1;
 grid-row: 10/11;
 }
 
+/* Projects page */
+
 .projecthead{
   grid-column: 1/ -1;
   grid-row: 3/ 4;
-
 }
 
 .salons-image{
@@ -261,7 +252,6 @@ grid-row: 10/11;
   grid-row: 6/ 7;
 
 }
-
 
 .tedxhead{
   grid-column: 1/ -1;
@@ -309,16 +299,18 @@ grid-row: 10/ 11;
   grid-row: 11/11;
 }
 
+/* Books page */
+
 .books-image{
   grid-column: 1 /-1 ;
   grid-row: 3/ 4;
   height: 500px;
   overflow: hidden;
-  webkit-filter: grayscale(100%);
+  webkit-filter: grayscale(100%); /* Adding grayscale to picture */
   filter: grayscale(100%);
 }
 
-.kenburns-top {
+.kenburns-top {  /* css animation taken from http://animista.net/play/background */
 	-webkit-animation: kenburns-top 5s ease-out both;
 	        animation: kenburns-top 5s ease-out both;
 }
@@ -354,70 +346,70 @@ grid-row: 10/ 11;
 }
 
 .books{
-  grid-column: 2 /4;
+  grid-column: 1/-1;
   grid-row: 5/ 8;
   }
+
+  /* photos page */
 
 .aridesert-image{
     grid-column: 1/-1;
     grid-row: 4/5;
     overflow: hidden;
-    -webkit-filter: saturate(200%); /* Safari */
+    -webkit-filter: saturate(200%); /* Adding saturation to picture */
     filter: saturate(200%); /* got this from w3 schools*/
   }
 
-  .suma-image{
-    grid-column: 1/-1;
-    grid-row: 6/7;
-    overflow: hidden;
-  webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+.suma-image{
+  grid-column: 1/-1;
+  grid-row: 6/7;
+  overflow: hidden;
+  webkit-filter: grayscale(100%); /* Adding grayscale to picture */
   filter: grayscale(100%); /* got this from w3 schools*/
   }
 
-  .lilacs2-image{
-    grid-column: 1/-1;
-    grid-row: 7/8;
-    overflow: hidden;
-    -webkit-filter: saturate(200%); /* Safari */
-    filter: saturate(200%); /* got this from w3 schools*/
+.lilacs2-image{
+  grid-column: 1/-1;
+  grid-row: 7/8;
+  overflow: hidden;
+  -webkit-filter: saturate(200%); /* adding saturation to picture */
+  filter: saturate(200%); /* got this from w3 schools*/
   }
 
-
-
-  .ariday-image{
+  .marissa-image{
     grid-column: 1/-1;
     grid-row: 3/4;
     justify-content: center;
     overflow: hidden;
-    -webkit-filter: drop-shadow(8px 8px 10px gray);
-    filter: drop-shadow(8px 8px 10px gray); /* got this from w3 schools*/
+    webkit-filter: sepia(35%); /* adding sepia to picture */
+    filter: sepia(35%);      /* got this from w3 schools*/
   }
 
-  .cousins-image{
-      grid-column: 1/-1;
-      grid-row: 8/9;
-      overflow: hidden;
-    }
+.cousins-image{
+  grid-column: 1/-1;
+  grid-row: 8/9;
+  overflow: hidden;
+  -webkit-filter: drop-shadow(8px 8px 10px gray); /* Adding dropshadow to picture */
+  filter: drop-shadow(8px 8px 10px gray); /* got this from w3 schools*/
+  }
 
-    .tedx-image{
-      grid-column: 1/-1;
-      grid-row: 9/10;
-      overflow: hidden;
-    }
+.tedx-image{
+  grid-column: 1/-1;
+  grid-row: 9/10;
+  overflow: hidden;
+  }
 
-    .mopop-image{
-      grid-column: 1/-1;
-      grid-row: 10/11;
-      overflow: hidden;
-    }
-
-
+.mopop-image{
+  grid-column: 1/-1;
+  grid-row: 10/11;
+  overflow: hidden;
+  }
 
 .wedding2-image{
-grid-column: 1/-1;
-grid-row: 11/12;
-justify-content: center;
-overflow: hidden;
+  grid-column: 1/-1;
+  grid-row: 11/12;
+  justify-content: center;
+  overflow: hidden;
 
 }
 .fall-image{
@@ -425,16 +417,15 @@ overflow: hidden;
   grid-row: 12/13;
   justify-content: center;
   overflow: hidden;
-  -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
+  -webkit-filter: blur(2px); /* adding blur to picture */
    filter: blur(2px); /* got this from w3 schools*/
-
 }
 .allison-image{
   grid-column: 1/-1;
   grid-row: 13/14;
   justify-content: center;
   overflow: hidden;
-  webkit-filter: sepia(75%); /* Safari 6.0 - 9.0 */
+  webkit-filter: sepia(75%); /* adding sepia to picture*/
   filter: sepia(75%);      /* got this from w3 schools*/
 }
 
@@ -445,7 +436,7 @@ overflow: hidden;
   overflow: hidden;
 }
 
-
+/* styling the form got this from w3schools */
 input[type=text]{
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */
@@ -477,64 +468,159 @@ input[type=submit]:hover {
   grid-column: 1/-1;
   grid-row: 16/17;
 }
+/* tablet view */
+@media screen and (min-width: 768px){
+  .nav{
+    padding: 20px 0;
+    text-align: left;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    background-color: white;
+  }
+
+    /* index.html page*/
+
+    .friends-image{
+      grid-column: 3/4;
+      grid-row: 5/6;
+      overflow: hidden;
+      }
+
+    .chip-image{
+      grid-column: 3/4;
+      grid-row: 4/5;
+      overflow: hidden;
+      }
+
+    .me-image{
+      grid-column: 2/3;
+      grid-row: 4/5;
+      overflow: hidden;
+      }
+
+    .sky-image{
+      grid-column: 2/3;
+      grid-row: 5/6;
+      overflow: hidden;
+      }
+      /* about page */
+.about-image{
+  grid-column: 1/-1;
+  grid-row: 4/5;
+  justify-content: center;
+  overflow: hidden;
+  }
+.about{
+  grid-column: 1/-1;
+  grid-row: 3/4;
+}
+.aridesert-image{
+  grid-column: 1/3;
+  grid-row: 6/7;
+  overflow: hidden;
+  }
 
 
-@media screen and (min-width: 800px){
+.cousins-image{
+  grid-column: 1/3;
+  grid-row: 5/6;
+  overflow: hidden;
+}
+
+.tedx-image{
+  grid-column: 2/4;
+  grid-row: 8/9;
+  overflow: hidden;
+}
+
+.mopop-image{
+  grid-column: 4/5;
+  grid-row: 8/9;
+  overflow: hidden;
+}
+
+.wedding2-image{
+  grid-column: 3/5;
+  grid-row: 5/6;
+  justify-content: center;
+  overflow: hidden;
+}
+.fall-image{
+  grid-column: 1/2;
+  grid-row: 8/9;
+  justify-content: center;
+  overflow: hidden;
+  }
+.allison-image{
+  grid-column: 4/5;
+  grid-row: 7/8;
+  justify-content: center;
+  overflow: hidden;
+}
+.emmag-image{
+  grid-column: 3/5;
+  grid-row: 6/7;
+  justify-content: center;
+  overflow: hidden;
+}
+.suma-image{
+  grid-column: 1/3;
+  grid-row: 4/5;
+  overflow: hidden;
+  }
+
+.lilacs2-image{
+  grid-column: 3/5;
+  grid-row: 4/5;
+  overflow: hidden;
+}
+.marissa-image{
+  grid-column: 1/2;
+  grid-row: 7/8;
+  justify-content: center;
+  overflow: hidden;
+}
+.form {
+  border-radius: 5px;
+  background-color: #a2a0b5;
+  padding: 20px;
+  grid-column: 2/4;
+  grid-row: 7/8;
+  }
+
+  }
+
+
+/* desktop view */
+@media screen and (min-width: 1025px){
 
   .container{
-
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 30px auto auto auto auto auto auto auto auto auto 100px;
   }
-
-  .nav{
-    display: flex;
-    flex-direction: column;
-    background-color: #A9CEF4;
-    padding: 20px 0;
-    grid-column: 1/4;
-    grid-row: 1;
-    padding-left: 20px;
+  header p{
+    font-size: 30px;
+  }
+ .nav{
+   padding: 20px 0;
+   text-align: right;
+   grid-column: 1/-1;
+   grid-row: 1/2;
+   background-color: #a9cef4;
   }
 
-  .friends-image{
-    grid-column: 3/4;
-    grid-row: 5/6;
-    overflow: hidden;
-  }
-
-  .chip-image{
-    grid-column: 3/4;
-    grid-row: 4/5;
-    overflow: hidden;
-  }
-
-  .me-image{
-    grid-column: 2/3;
-    grid-row: 4/5;
-   overflow: hidden;
-  }
-
-  .sky-image{
-    grid-column: 2/3;
-    grid-row: 5/6;
-    overflow: hidden;
-  }
-  .about-image{
-    grid-column: 1/3;
+  /* about page */
+.about-image{
+  grid-column: 1/3;
     grid-row: 3/4;
     justify-content: center;
     overflow: hidden;
 }
-
-
   .about{
     grid-column: 3/5;
     grid-row: 3/4;
   }
-
-
-
+/* resume page*/
   .resume{
   grid-column: 2 /4;
   grid-row: 3/4;
@@ -571,10 +657,10 @@ input[type=submit]:hover {
   grid-row: 7/8;
   }
 
+/* Projects page*/
   .projecthead{
     grid-column: 1/ -1;
     grid-row: 3/ 4;
-
   }
 
   .textbox2{
@@ -629,97 +715,81 @@ input[type=submit]:hover {
     grid-column: 1 /3;
     grid-row: 9/10;
   }
+  /* Books page */
 
   .books-image{
     grid-column: 1 / -1;
     grid-row: 3/ 4;
     max-height: 700px;
-    /* overflow: hidden;
-    background-attachment: fixed; /* Parallax effect */
-    background-image: url("../images/books.jpg");
-    background-repeat: no-repeat;    /* Your code here - Link to header.jpg in the images folder */
-    background-position: center;  /* Parallax effect */
-    background-repeat: no-repeat; /* Parallax effect */
-    background-size: cover;
     }
 
-    .books{
-      grid-column: 2/4;
-      grid-row: 5/ 8;
-    }
+.books{
+  grid-column: 2/4;
+  grid-row: 5/ 8;
+  }
+  /* photos page */
+.aridesert-image{
+  grid-column: 2/3;
+  grid-row: 6/7;
+  overflow: hidden;
+  }
 
-    .aridesert-image{
-        grid-column: 2/3;
-        grid-row: 6/7;
-        overflow: hidden;
-      }
+.suma-image{
+  grid-column: 2/3;
+  grid-row: 4/5;
+  overflow: hidden;
+  }
 
-      .suma-image{
-        grid-column: 2/-3;
-        grid-row: 4/5;
-        overflow: hidden;
-      }
+.lilacs2-image{
+  grid-column: 3/4;
+  grid-row: 4/5;
+  overflow: hidden;
+}
+.form {
+  border-radius: 5px;
+  background-color: #a2a0b5;
+  padding: 20px;
+  grid-column: 1/2;
+  grid-row: 4/5;
+  }
 
-      .lilacs2-image{
-        grid-column: 3/4;
-        grid-row: 4/5;
-        overflow: hidden;
-      }
-      .form {
-        border-radius: 5px;
-        background-color: #a2a0b5;
-        padding: 20px;
-        grid-column: 1/2;
-        grid-row: 4/5;
-      }
+.marissa-image{
+  grid-column: 1/2;
+  grid-row: 5/6;
+  justify-content: center;
+  overflow: hidden;
+}
 
+.cousins-image{
+  grid-column: 2/3;
+  grid-row: 5/6;
+  overflow: hidden;
+}
 
+.tedx-image{
+  grid-column: 1/2;
+  grid-row: 6/7;
+  overflow: hidden;
+}
 
-      .ariday-image{
+.mopop-image{
+  grid-column: 4/5;
+  grid-row: 4/5;
+  overflow: hidden;
+}
 
-        grid-column: 1/2;
-        grid-row: 5/6;
-        justify-content: center;
-        overflow: hidden;
-
-      }
-
-      .cousins-image{
-          grid-column: 2/3;
-          grid-row: 5/6;
-          overflow: hidden;
-        }
-
-        .tedx-image{
-          grid-column: 1/2;
-          grid-row: 6/7;
-          overflow: hidden;
-        }
-
-        .mopop-image{
-          grid-column: 4/5;
-          grid-row: 4/5;
-          overflow: hidden;
-        }
-
-
-
-    .wedding2-image{
-
-    grid-column: 4/5;
-    grid-row: 5/6;
-    justify-content: center;
-    overflow: hidden;
-
-    }
-    .fall-image{
-      grid-column: 3/4;
-      grid-row: 5/6;
-      justify-content: center;
-      overflow: hidden;
-      -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
-        filter: blur(2px); /* got this from w3 schools*/
-    }
+.wedding2-image{
+  grid-column: 4/5;
+  grid-row: 5/6;
+  justify-content: center;
+  overflow: hidden;
+}
+.fall-image{
+  grid-column: 3/4;
+  grid-row: 5/6;
+  justify-content: center;
+  overflow: hidden;
+  }
 .allison-image{
   grid-column: 3/4;
   grid-row: 6/7;
