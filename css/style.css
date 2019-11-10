@@ -23,7 +23,7 @@ h1{
 h2{
   color: black;
   text-align: center;
-  font-size: 22px;
+  font-size: 32px;
 }
 h3{
   font-size: 30px;
@@ -828,6 +828,11 @@ input[type=submit]:hover {
     transition: default;
     z-index: 1;
   }
+
+.kenburns-top {
+    display: none;
+  }
+
 
 
 }
