@@ -13,7 +13,7 @@ body{
 
 
 h1{
-  font-size: 50px;
+  font-size: 40px;
   line-height: 1;
   padding: 50px 0;
   text-align: center;
@@ -21,8 +21,13 @@ h1{
 }
 
 h2{
-  font-size: 32px;
-  line-height: 1.5;
+  color: black;
+  text-align: center;
+  font-size: 22px;
+}
+h3{
+  font-size: 30px;
+  line-height: 1;
   color: black;
   text-align: center;
 }
@@ -79,9 +84,7 @@ footer{
   text-align: center;
   grid-column: 1/-1;
   grid-row: 17/auto;
-
 }
-
 
 .footercolor{
   color: white;
@@ -96,10 +99,10 @@ footer{
 
 }
 .nav{
-  padding: 20px 0;
+  padding: 10px 0;
   text-align: center;
   grid-column: 1/-1;
-  grid-row: 1/2;
+  grid-row: 1/3;
   background-color: white;
 }
 
@@ -116,13 +119,6 @@ grid-column: 1/-1;
 grid-row: 2/3;
 }
 
-header p{
-  color: black;
-  font-size: 20px;
-  padding: 0 100px;
-  text-align: center;
-
-}
 
 .retro{
   color: black;  /* adding retro challenge to header */
@@ -260,7 +256,7 @@ grid-row: 10/11;
 
 .textbox2{
   background-color: white;
-  opacity: .5;
+  opacity: .65;
   text-align: left;
   border: 50px solid #a9cef4;
 }
@@ -279,8 +275,6 @@ grid-row: 10/11;
 .ux-image{
   grid-column: 1 /-1;
   grid-row: 9/10 ;
-  max-height: 700px;
-  max-width: 1000px;
   overflow: hidden;
 }
 
@@ -296,7 +290,11 @@ grid-row: 10/ 11;
 
 .si350{
   grid-column: 1 /-1;
-  grid-row: 11/11;
+  grid-row: 11/12;
+}
+.class-image{
+  grid-column: 2/4;
+  grid-row: 12/13;
 }
 
 /* Books page */
@@ -315,20 +313,6 @@ grid-row: 10/ 11;
 	        animation: kenburns-top 5s ease-out both;
 }
 
-@-webkit-keyframes kenburns-top {
-  0% {
-    -webkit-transform: scale(1) translateY(0);
-            transform: scale(1) translateY(0);
-    -webkit-transform-origin: 50% 16%;
-            transform-origin: 50% 16%;
-  }
-  100% {
-    -webkit-transform: scale(1.25) translateY(-15px);
-            transform: scale(1.25) translateY(-15px);
-    -webkit-transform-origin: top;
-            transform-origin: top;
-  }
-}
 
 @keyframes kenburns-top {
   0% {
@@ -347,14 +331,22 @@ grid-row: 10/ 11;
 
 .books{
   grid-column: 1/-1;
-  grid-row: 5/ 8;
+  grid-row: 5/6;
+  }
+  .womantextbox{
+grid-column: 1/-1;
+grid-row: 6/7;
+  }
+  .girltextbox{
+    grid-column: 1/-1;
+    grid-row: 7/8;
   }
 
   /* photos page */
 
 .aridesert-image{
     grid-column: 1/-1;
-    grid-row: 4/5;
+    grid-row: 3/4;
     overflow: hidden;
     -webkit-filter: saturate(200%); /* Adding saturation to picture */
     filter: saturate(200%); /* got this from w3 schools*/
@@ -378,7 +370,7 @@ grid-row: 10/ 11;
 
   .marissa-image{
     grid-column: 1/-1;
-    grid-row: 3/4;
+    grid-row: 8/9;
     justify-content: center;
     overflow: hidden;
     webkit-filter: sepia(35%); /* adding sepia to picture */
@@ -387,7 +379,7 @@ grid-row: 10/ 11;
 
 .cousins-image{
   grid-column: 1/-1;
-  grid-row: 8/9;
+  grid-row: 4/5;
   overflow: hidden;
   -webkit-filter: drop-shadow(8px 8px 10px gray); /* Adding dropshadow to picture */
   filter: drop-shadow(8px 8px 10px gray); /* got this from w3 schools*/
@@ -450,7 +442,7 @@ input[type=text]{
 
 input[type=submit] {
   background-color: #a9cef4;
-  color: white;
+  color: black;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -470,11 +462,18 @@ input[type=submit]:hover {
 }
 /* tablet view */
 @media screen and (min-width: 768px){
+  h1{
+    font-size: 50px;
+    line-height: 1;
+    padding: 50px 0;
+    text-align: center;
+    color: black;
+  }
   .nav{
     padding: 20px 0;
     text-align: left;
     grid-column: 1/-1;
-    grid-row: 1/2;
+    grid-row: 1/3;
     background-color: white;
   }
 
@@ -482,13 +481,11 @@ input[type=submit]:hover {
 
     .friends-image{
       grid-column: 3/4;
-      grid-row: 5/6;
       overflow: hidden;
       }
 
     .chip-image{
       grid-column: 3/4;
-      grid-row: 4/5;
       overflow: hidden;
       }
 
@@ -596,7 +593,7 @@ input[type=submit]:hover {
 
   .container{
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 30px auto auto auto auto auto auto auto auto auto 100px;
+    grid-template-rows: 30px auto auto auto auto auto auto auto auto auto auto auto auto 100px;
   }
   header p{
     font-size: 30px;
@@ -605,8 +602,12 @@ input[type=submit]:hover {
    padding: 20px 0;
    text-align: right;
    grid-column: 1/-1;
-   grid-row: 1/2;
+   grid-row: 1/3;
    background-color: #a9cef4;
+  }
+  footer{
+    grid-row: 14/auto;
+
   }
 
   /* about page */
@@ -622,7 +623,7 @@ input[type=submit]:hover {
   }
 /* resume page*/
   .resume{
-  grid-column: 2 /4;
+  grid-column: 2/4;
   grid-row: 3/4;
   }
 
@@ -633,28 +634,28 @@ input[type=submit]:hover {
 
   .profcontent{
   grid-column: 2/4;
-  grid-row: 4/6;
+  grid-row: 4/5;
   }
 
   .campusinvolv{
   grid-column: 1/2;
-  grid-row: 6/7;
+  grid-row: 5/6;
 
   }
 
   .campuscont{
   grid-column: 2/4;
-  grid-row: 6/7;
+  grid-row: 5/6;
   }
 
   .skills{
   grid-column: 1/2;
-  grid-row: 7/8;
+  grid-row: 6/7;
 
   }
   .skillscont{
   grid-column: 2/4;
-  grid-row: 7/8;
+  grid-row: 6/7;
   }
 
 /* Projects page*/
@@ -665,55 +666,57 @@ input[type=submit]:hover {
 
   .textbox2{
     background-color: white;
-    opacity: .5;
+    opacity: .65;
     text-align: left;
-    border: 50px solid #a9cef4;
+    border: 10px solid #a9cef4;
     font-size: 20px;
     font-stretch: expanded;
   }
 
 
   .salons-image{
-    grid-column: 3/ 4;
-    grid-row: 5/ 6;
+    grid-column: 2/4;
+    grid-row: 6/7;
   }
 
   .tedxhead{
-    grid-column: 2/ 3;
+    grid-column: 2/4;
     grid-row: 4/5;
   }
 
   .tedx{
-    grid-column: 1/ 3;
-    grid-row: 5/7;
+    grid-column: 2/4;
+    grid-row: 5/6;
   }
 
   .uxhead{
-    grid-column: 2/ 4;
-    grid-row: 6/ 7;
+    grid-column: 2/4;
+    grid-row: 7/8;
   }
 
   .ux-image{
-    grid-column: 3 / 4;
-    grid-row: 7/8 ;
-    max-height: 700px;
-    max-width: 1000px;
+    grid-column: 2/4;
+    grid-row: 9/10 ;
     overflow: hidden;
   }
 
   .research{
-    grid-column: 1 /3;
-    grid-row: 7/ 8;
+    grid-column: 2 /4;
+    grid-row: 8/9;
   }
 
   .si350head{
-  grid-column: 2 /3;
-  grid-row: 8/ 9;
+  grid-column: 2 /4;
+  grid-row: 10/11;
   }
 
   .si350{
-    grid-column: 1 /3;
-    grid-row: 9/10;
+    grid-column: 2/4;
+    grid-row: 11/12;
+  }
+  .class-image{
+    grid-column: 2/4;
+    grid-row: 12/13;
   }
   /* Books page */
 
@@ -725,12 +728,17 @@ input[type=submit]:hover {
 
 .books{
   grid-column: 2/4;
-  grid-row: 5/ 8;
+  }
+  .womantextbox{
+    grid-column: 2/4;
+    grid-row:
+  }
+  .girltextbox{
+    grid-column: 2/4;
   }
   /* photos page */
 .aridesert-image{
   grid-column: 2/3;
-  grid-row: 6/7;
   overflow: hidden;
   }
 
