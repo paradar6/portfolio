@@ -108,6 +108,7 @@ footer{
 
 header{
 background-attachment: fixed; /* Parallax effect */
+background-color: #fff;
 background-image: url("../images/aridesert.JPG");
 background-repeat: no-repeat;
 background-position: center;  /* Parallax effect */
@@ -171,13 +172,13 @@ text-shadow: 2px 2px 0px #d5d5d5, 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 .about{
-  grid-column: 1/-1;
+  grid-column: 2/4;
   grid-row: 4/5;
 }
 
 .abouttext{
   font-size: 20px;
-  text-align: center;
+  text-align: left;
 }
 .abouthead{
   font-size: 35px;
@@ -373,7 +374,7 @@ grid-row: 6/7;
     grid-row: 8/9;
     justify-content: center;
     overflow: hidden;
-    webkit-filter: sepia(35%); /* adding sepia to picture */
+    webkit-filter: sepia(35%);  /* Adding sepia to picture */
     filter: sepia(35%);      /* got this from w3 schools*/
   }
 
@@ -430,14 +431,14 @@ grid-row: 6/7;
 
 /* styling the form got this from w3schools */
 input[type=text]{
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
 input[type=submit] {
@@ -508,7 +509,7 @@ input[type=submit]:hover {
   overflow: hidden;
   }
 .about{
-  grid-column: 1/-1;
+  grid-column: 2/4;
   grid-row: 3/4;
 }
 .aridesert-image{
@@ -584,9 +585,7 @@ input[type=submit]:hover {
   grid-column: 2/4;
   grid-row: 7/8;
   }
-
   }
-
 
 /* desktop view */
 @media screen and (min-width: 1025px){
@@ -595,9 +594,7 @@ input[type=submit]:hover {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 30px auto auto auto auto auto auto auto auto auto auto auto auto 100px;
   }
-  header p{
-    font-size: 30px;
-  }
+
  .nav{
    padding: 20px 0;
    text-align: right;
@@ -607,7 +604,6 @@ input[type=submit]:hover {
   }
   footer{
     grid-row: 14/auto;
-
   }
 
   /* about page */
@@ -621,15 +617,16 @@ input[type=submit]:hover {
     grid-column: 3/5;
     grid-row: 3/4;
   }
+  .abouttext{
+    text-align: center;
+  }
 /* resume page*/
   .resume{
   grid-column: 2/4;
-  grid-row: 3/4;
   }
 
   .profexp{
   grid-column: 1 /2;
-  grid-row: 4/5;
   }
 
   .profcontent{
@@ -659,70 +656,52 @@ input[type=submit]:hover {
   }
 
 /* Projects page*/
-  .projecthead{
-    grid-column: 1/ -1;
-    grid-row: 3/ 4;
-  }
 
   .textbox2{
-    background-color: white;
-    opacity: .65;
     text-align: left;
     border: 10px solid #a9cef4;
     font-size: 20px;
     font-stretch: expanded;
   }
 
-
   .salons-image{
     grid-column: 2/4;
-    grid-row: 6/7;
   }
 
   .tedxhead{
     grid-column: 2/4;
-    grid-row: 4/5;
   }
 
   .tedx{
     grid-column: 2/4;
-    grid-row: 5/6;
   }
 
   .uxhead{
     grid-column: 2/4;
-    grid-row: 7/8;
   }
 
   .ux-image{
     grid-column: 2/4;
-    grid-row: 9/10 ;
     overflow: hidden;
   }
 
   .research{
     grid-column: 2 /4;
-    grid-row: 8/9;
   }
 
   .si350head{
   grid-column: 2 /4;
-  grid-row: 10/11;
   }
 
   .si350{
     grid-column: 2/4;
-    grid-row: 11/12;
   }
   .class-image{
     grid-column: 2/4;
-    grid-row: 12/13;
   }
   /* Books page */
 
   .books-image{
-    grid-column: 1 / -1;
-    grid-row: 3/ 4;
     max-height: 700px;
     }
 
@@ -731,7 +710,6 @@ input[type=submit]:hover {
   }
   .womantextbox{
     grid-column: 2/4;
-    grid-row:
   }
   .girltextbox{
     grid-column: 2/4;
